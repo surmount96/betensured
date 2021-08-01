@@ -1,0 +1,1 @@
+create table fleet_crud.role_has_permissions (`role_id` int(11)  ,`permission_id` int (11) )ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19;

@@ -1,0 +1,1 @@
+create table cars ( `id` int(11) NOT NULL AUTO_INCREMENT,`name` varchar(50),`model` varchar(56) NOT NULL,`brand` varchar(50),`color` varchar(50),`year` int(11) NOT NULL,`seat_no` int(11) NOT NULL,`speed_limit` int(11),`created_at` datetime NOT NULL,`updated_at` datetime NOT NULL,PRIMARY KEY (`id`))ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19;
