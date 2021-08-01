@@ -12,9 +12,8 @@ require('../config/database.php');
         while($row = $statement->fetch_assoc()){
             $items[] = $row;
         }
-
+        //All items 
         return $items;
-        return $statement->fetch_array();
     }
 
     function deleteCar($id)
@@ -25,7 +24,8 @@ require('../config/database.php');
 
         $statement = $db->query($query);
 
-    
+        //If delete is successful, return back a message to the user and redirect
+        // According;y
         if($statement === true){
             $_SESSION['success'] = 'Item successfully deleted';
             $_SESSION['validation_time'] = time();
@@ -58,6 +58,12 @@ require('../config/database.php');
             $_SESSION['validation_time'] = time();
             header('Location: ../views/fleet.php');
         }
+    }
+
+    function updateCar($request)
+    {
+        global $db;
+        //
     }
 
 ?>

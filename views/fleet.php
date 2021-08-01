@@ -5,15 +5,17 @@ require '../models/fleet_db.php';
 
 $user_id = $_SESSION['user_id'];
 
+//Verify user details set in session
 if(!$user_id){
   header('Location: ./login.php');
 }
 
+//Fetch the desire result of all items on page load
 $result = fetchAllCars();
 
+//This block uses action to determine the method to call from fleet_db
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
   $action = $_POST['action'];
-
   switch($action) {
     case 'delete': 
       deleteCar($_POST['id']);
@@ -24,6 +26,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
   }
 }
 
+//Session timer
 if(isset($_SESSION['validation_time']) && time() - $_SESSION['validation_time'] > 10){
   unset($_SESSION['auth_message']);
   unset($_SESSION['success']);
