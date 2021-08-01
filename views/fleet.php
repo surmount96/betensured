@@ -45,7 +45,7 @@ if(isset($_SESSION['validation_time']) && time() - $_SESSION['validation_time'] 
     <button class="btn btn-outline-danger" type="submit">Logout</button>
   </form>
 </div>
-<?php include "./errors/error.php" ?>
+<?php //include "./errors/error.php" ?>
 <?php include "./inc/message.php" ?>
 <table class="table table-bordered">
     <thead>
