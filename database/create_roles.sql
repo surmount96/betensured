@@ -1,0 +1,3 @@
+create table roles ( `id` int(11) NOT NULL AUTO_INCREMENT,`name` varchar(50),`created_at` datetime NOT NULL,`updated_at` datetime NOT NULL,PRIMARY KEY (`id`))ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19;
+
+insert into roles (`name`,`created_at`,`updated_at`) values ('user','2021-02-22 00:00:00','2021-02-22 00:00:00'),('support','2021-02-22 00:00:00','2021-02-22 00:00:00'),('admin','2021-02-22 00:00:00','2021-02-22 00:00:00');
