@@ -48,11 +48,13 @@ require('../config/database.php');
         $timestamp = date('Y-m-d H:i:s');
         $sql = "INSERT INTO cars (`model`, `seat_no`, `speed_limit`,`color`,`brand`,`year`,`created_at`,`updated_at`) VALUES ('$model','$seat_no','$speed_limit','$color','$brand','$year','$timestamp','$timestamp')";
      
+        //If an error while logging the details return back the error to the user
         if($db->error){
             $_SESSION['auth_message'] = $db->error;
             $_SESSION['validation_time'] = time();
         }
 
+        //If successful, show a flash message and redirect
         if($db->query($sql) === true){
             $_SESSION['success'] = 'Item successfully created';
             $_SESSION['validation_time'] = time();
