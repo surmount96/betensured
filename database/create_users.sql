@@ -1,1 +1,3 @@
 create table users ( `id` int(11) NOT NULL AUTO_INCREMENT,`name` varchar(256) NOT NULL,`username` varchar(50),`role` ENUM('support','user','admin'),`password` varchar(255) NOT NULL,`created_at` datetime NOT NULL,PRIMARY KEY (`id`))ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19;
+
+insert into users (`name`,`username`,`password`,`created_at`) values ('Betensured Admin','surmount','098f6bcd4621d373cade4e832627b4f6','2021-02-22 00:00:00');

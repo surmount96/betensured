@@ -1,3 +1,3 @@
 create table permissions ( `id` int(11) NOT NULL AUTO_INCREMENT,`name` varchar(50),`created_at` datetime NOT NULL,`updated_at` datetime NOT NULL,PRIMARY KEY (`id`))ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19;
 
-insert into fleet_crud.permissions (`name`,`created_at`,`updated_at`) values ('can create car','2021-02-22 00:00:00','2021-02-22 00:00:00'),('can delete car','2021-02-22 00:00:00','2021-02-22 00:00:00'),('can view car','2021-02-22 00:00:00','2021-02-22 00:00:00'),('can update car','2021-02-22 00:00:00','2021-02-22 00:00:00');
+insert into permissions (`name`,`created_at`,`updated_at`) values ('can create car','2021-02-22 00:00:00','2021-02-22 00:00:00'),('can delete car','2021-02-22 00:00:00','2021-02-22 00:00:00'),('can view car','2021-02-22 00:00:00','2021-02-22 00:00:00'),('can update car','2021-02-22 00:00:00','2021-02-22 00:00:00');
